@@ -45,6 +45,7 @@ Additional information:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 Chose the first option to download the standard version (to get your cheat working, it is mandatory to use a standard version)
+
 **Install Build Dependencies (Ubuntu):**
 
 ```bash
