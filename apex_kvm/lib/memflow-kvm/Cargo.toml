@@ -1,0 +1,21 @@
+
+[profile.bench]
+debug = true
+
+[profile.release]
+lto = "fat"
+
+[workspace]
+resolver = "1"
+members = [
+    "memflow-kvm-ioctl",
+    "memflow-kvm"
+]
+
+default-members = [
+    "memflow-kvm-ioctl",
+    "memflow-kvm"
+]
+
+#[patch.crates-io]
+#memflow = { path = "../memflow/memflow" }
