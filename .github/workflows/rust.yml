@@ -17,10 +17,10 @@ jobs:
 
     steps:
     - name : Go into the project directory
-      run : pwd && cd /home/runner/work/apexlegends_kvm/apexlegends_kvm/apex_dma 
+      run : pwd
     - name : Installing Cargo
       run : curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -y | sh
     - name : Installing dependencies
       run : sudo apt install cmake clang protobuf-compiler libusb-1.0-0-dev libzstd-dev libglfw3-dev libfreetype6-dev libvulkan-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev wayland-protocols libwayland-dev libxkbcommon-dev
     - name: Build
-      run: pwd && ./build.sh
+      run: cd apex_dma && ./build.sh
