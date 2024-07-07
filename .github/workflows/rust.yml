@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - name : Go into the project directory
-      run : pwd && ls
+      run : pwd && ls ../
     - name : Installing Cargo
       run : curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -y | sh
     - name : Rust Version
