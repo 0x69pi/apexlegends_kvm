@@ -16,9 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name : Go into the project directory
+      run : cd apex_dma 
     - name : Installing Cargo
       run : curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -y | sh
     - name : Installing dependencies
       run : sudo apt install cmake clang protobuf-compiler libusb-1.0-0-dev libzstd-dev libglfw3-dev libfreetype6-dev libvulkan-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev wayland-protocols libwayland-dev libxkbcommon-dev
     - name: Build
-      run: cd apex_dma && ./build.sh
+      run: pwd && ./build.sh
