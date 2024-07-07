@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - name : Go into the project directory
-      run : pwd && cd ~/apexlegends_kvm/apex_dma 
+      run : pwd && cd /home/runner/work/apexlegends_kvm/apex_dma 
     - name : Installing Cargo
       run : curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -y | sh
     - name : Installing dependencies
